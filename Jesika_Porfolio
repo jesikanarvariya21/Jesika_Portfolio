@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesika Narvariya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Jesika Narvariya</h1>
+    <p>Electronics & Communication Engineering Student</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Jesika Narvariya, an Electronics and Communication Engineering student 
+        with a strong interest in C programming and creative editing. 
+        I enjoy learning new technologies and improving my technical skills.
+    </p>
+</section>
+
+<section>
+    <h2>Skills & Areas of Interest</h2>
+    <ul>
+        <li>C Programming</li>
+        <li>Problem Solving</li>
+        <li>Video Editing</li>
+        <li>Creative Content Design</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:jesikan001@gmail.com">jesikan001@gmail.com</a></p>
+    <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/jesika-narvariya" target="_blank">
+            Jesika Narvariya
+        </a>
+    </p>
+    <p>GitHub: 
+        <a href="https://github.com/jesikanarvariya21" target="_blank">
+            jesikanarvariya21
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Jesika Narvariya | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #0b3c5d;
+    margin-top: 40px;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    margin: 10px auto;
+    width: 250px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #0b3c5d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0b3c5d;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}

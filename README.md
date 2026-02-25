@@ -81,3 +81,180 @@
 <script src="script.js"></script>
 </body>
 </html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1e3a8a,#0f172a);
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(255,255,255,0.08);
+    padding:60px;
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h2{
+    margin-top:15px;
+    color:#38bdf8;
+}
+
+.hero-buttons{
+    margin-top:25px;
+}
+
+.btn, .btn-outline{
+    padding:10px 25px;
+    margin:10px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn{
+    background:#38bdf8;
+    color:black;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.btn-outline{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.btn-outline:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+/* Sections */
+.section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:32px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px 30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    padding:20px;
+    background:#0f172a;
+}
+
+/* Scroll Reveal */
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+// Typing Effect
+const text = "Electronics & Communication Engineer | C Programmer | Creative Editor";
+let index = 0;
+
+function type() {
+    if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 50);
+    }
+}
+window.onload = type;
+
+// Scroll Reveal
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+    reveals.forEach((element) => {
+        let windowHeight = window.innerHeight;
+        let elementTop = element.getBoundingClientRect().top;
+        let visible = 150;
+        if (elementTop < windowHeight - visible) {
+            element.classList.add("active");
+        }
+    });
+}
+window.addEventListener("scroll", reveal);

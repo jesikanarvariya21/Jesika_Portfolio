@@ -3,206 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <title>Jesika Narvariya | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #e2e8f0, #f8fafc);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #1e293b, #334155);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            color: #1e40af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">Jesika</div>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<header class="hero">
-    <div class="hero-content">
-        <h1>Jesika Narvariya</h1>
-        <p>Electronics & Communication Engineer | C Programmer | Creative Editor</p>
-        <a href="#contact" class="btn">Connect With Me</a>
-    </div>
+<header>
+    <h1>Jesika Narvariya</h1>
+    <p>Frontend Developer | Computer Science Student</p>
 </header>
 
-<section id="about" class="section reveal">
+<section>
     <h2>About Me</h2>
-    <p>
-        I am an Electronics and Communication Engineering student passionate about 
-        C programming and digital creativity. I enjoy solving problems, 
-        learning emerging technologies, and building meaningful digital experiences.
-    </p>
-</section>
-
-<section id="skills" class="section reveal">
-    <h2>Skills</h2>
-    <div class="cards">
-        <div class="card">C Programming</div>
-        <div class="card">Problem Solving</div>
-        <div class="card">Video Editing</div>
-        <div class="card">Creative Design</div>
+    <div class="card">
+        <p>
+            Hello! I am Jesika Narvariya, a passionate Computer Science student 
+            interested in web development and software engineering. 
+            I enjoy building clean, responsive, and user-friendly interfaces 
+            while continuously learning modern frontend technologies.
+        </p>
     </div>
 </section>
 
-<section id="projects" class="section reveal">
-    <h2>Projects</h2>
-    <div class="cards">
-        <div class="card">Student Portfolio Website</div>
-        <div class="card">Basic C Programming Projects</div>
-        <div class="card">Creative Editing Showcase</div>
+<section>
+    <h2>Skills & Interests</h2>
+    <div class="card">
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js (Basics)</li>
+            <li>Responsive Web Design</li>
+            <li>Problem Solving</li>
+            <li>Frontend Development & UI Design</li>
+        </ul>
     </div>
 </section>
 
-<section id="contact" class="section reveal">
+<section class="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
+    <div class="card">
+        <a href="mailto:jesikan001@gmail.com">
+            📧 Email: jesikan001@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/jesika-narvariya" target="_blank">
+            💼 LinkedIn: Jesika Narvariya
+        </a>
+
+        <a href="https://github.com/jesikanarvariya21" target="_blank">
+            💻 GitHub: jesikanarvariya21
+        </a>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Jesika Narvariya | All Rights Reserved</p>
+    © 2026 Jesika Narvariya | All Rights Reserved
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 60px;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-.hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1e3a8a, #0f172a);
-    text-align: center;
-}
-
-.hero-content {
-    background: rgba(255,255,255,0.1);
-    padding: 50px;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    margin: 20px 0;
-}
-
-.btn {
-    padding: 10px 25px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: white;
-}
-
-.section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    margin-bottom: 30px;
-    font-size: 32px;
-    color: #38bdf8;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px 30px;
-    border-radius: 15px;
-    transition: 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    background: #334155;
-}
-
-footer {
-    padding: 20px;
-    background: #0f172a;
-    text-align: center;
-}
-
-/* Scroll Reveal Animation */
-.reveal {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: 1s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-function reveal() {
-    let reveals = document.querySelectorAll(".reveal");
-
-    reveals.forEach((element) => {
-        let windowHeight = window.innerHeight;
-        let elementTop = element.getBoundingClientRect().top;
-        let visible = 150;
-
-        if (elementTop < windowHeight - visible) {
-            element.classList.add("active");
-        }
-    });
-}
-
-window.addEventListener("scroll", reveal);
